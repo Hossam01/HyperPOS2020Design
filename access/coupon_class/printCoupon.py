@@ -4,7 +4,6 @@ from pathlib import Path
 from PyQt5 import QtWidgets
 from PyQt5.uic import loadUi
 from data_connection.h1pos import db1
-from presentation.Themes.Special_StyleSheet import label_num, desc_5
 
 
 
@@ -21,13 +20,14 @@ class CL_printCoupon(QtWidgets.QDialog):
     def FN_LOADUI(self):
         filename = self.dirname + '/printCoupon.ui'
         loadUi(filename, self)
+        self.FN_getData()
 
+        # Set Style
+        # self.labe_id.setStyleSheet(label_num)
+        # self.label.setStyleSheet(desc_5)
         css_path = Path(__file__).parent.parent.parent
         path = css_path.__str__() + '/presentation/Themes/Style.css'
         self.setStyleSheet(open(path).read())
-        self.FN_getData()
-
-
 
     # Todo: method to get all coupons
     def FN_getData(self):

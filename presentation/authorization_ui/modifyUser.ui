@@ -34,6 +34,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="placeholderText">
     <string>name</string>
    </property>
@@ -46,6 +54,14 @@
      <width>201</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string/>
@@ -69,6 +85,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -88,6 +112,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="placeholderText">
     <string>Full name</string>
    </property>
@@ -101,6 +133,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QComboBox" name="CMB_userStatus">
    <property name="geometry">
@@ -111,19 +151,30 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QPushButton" name="BTN_modifyUser">
    <property name="geometry">
     <rect>
-     <x>358</x>
+     <x>328</x>
      <y>374</y>
-     <width>111</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>29LT Bukra Regular</family>
      <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -139,6 +190,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>User ID</string>
    </property>
@@ -152,6 +211,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="LB_userID">
    <property name="enabled">
@@ -164,6 +231,14 @@
      <width>151</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -181,6 +256,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Name &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
@@ -193,6 +276,14 @@
      <width>99</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;HR Id &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -207,6 +298,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Password &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
@@ -220,6 +319,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Full name &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
@@ -232,6 +339,14 @@
      <width>99</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;User type &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -247,6 +362,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Status &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                 </string>
@@ -261,6 +384,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Branch ID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                 </string>
@@ -274,6 +405,14 @@
      <width>99</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Section&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;

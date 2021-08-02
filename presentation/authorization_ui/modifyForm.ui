@@ -34,6 +34,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="placeholderText">
     <string/>
    </property>
@@ -47,6 +55,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
@@ -56,6 +72,14 @@
      <width>99</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Form help</string>
@@ -70,15 +94,31 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QPushButton" name="BTN_modifyForm">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>220</x>
      <y>240</y>
-     <width>121</width>
+     <width>161</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Modify Form</string>
@@ -93,6 +133,14 @@
      <height>17</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>Status</string>
    </property>
@@ -106,15 +154,31 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>16</x>
+     <x>10</x>
      <y>30</y>
      <width>81</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>Form Name</string>
@@ -132,6 +196,14 @@
      <height>17</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>
@@ -148,6 +220,14 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Description &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
@@ -160,6 +240,14 @@
      <width>99</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Form type&lt;span style=&quot; color:#ef2929;&quot;&gt;
@@ -175,6 +263,14 @@
      <width>86</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
  </widget>

@@ -21,8 +21,6 @@ from access.main_login_class.main import CL_main
 from data_connection.h1pos import db1
 
 
-
-
 class CL_login(QtWidgets.QDialog):
     switch_window = QtCore.pyqtSignal()
 

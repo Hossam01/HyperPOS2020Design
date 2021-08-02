@@ -3,13 +3,13 @@ from datetime import datetime
 from pathlib import Path
 from random import randint
 
-from PyQt5 import QtWidgets, QtCore
+from PyQt5 import QtWidgets
 from PyQt5.QtCore import QDate
 from PyQt5.uic import loadUi
 
 from access.authorization_class.user_module import CL_userModule
 from data_connection.h1pos import db1
-
+from presentation.Themes.Special_StyleSheet import desc_5
 
 
 class CL_StoppedSerial(QtWidgets.QDialog):
@@ -32,10 +32,13 @@ class CL_StoppedSerial(QtWidgets.QDialog):
         self.CMB_CouponStatus.addItems(["Active"])
         self.BTN_stopCoupon.clicked.connect(self.FN_Stop)
         self.BTN_recreateCoupon.clicked.connect(self.FN_Recreate)
+
+        # Set Style
+        # self.label_4.setStyleSheet(label_num)
+        self.label_4.setStyleSheet(desc_5)
         css_path = Path(__file__).parent.parent.parent
         path = css_path.__str__() + '/presentation/Themes/Style.css'
         self.setStyleSheet(open(path).read())
-
 
     # Todo: method to search about coupon by barcode
     def FN_Search(self):
@@ -63,7 +66,7 @@ class CL_StoppedSerial(QtWidgets.QDialog):
                     self.radioButton_Percentage.setChecked(True)
                     self.LE_desc_3.setValue(float(record[3]))
                     self.LE_desc_2.clear()
-                dateto = record[13]
+                dateto = record[12]
                 xto = dateto.split("-")
                 d = QDate(int(xto[2]), int(xto[1]), int(xto[0]))
                 self.Qdate_to.setDate(d)
@@ -81,16 +84,6 @@ class CL_StoppedSerial(QtWidgets.QDialog):
                 self.CMB_CouponStatus.setCurrentIndex(int(record[13]))
                 self.BTN_stopCoupon.setEnabled(True)
                 self.BTN_recreateCoupon.setEnabled(True)
-
-                timefrom = record[12]
-                tfrom = timefrom.split(":")
-                some_time = QtCore.QTime(int(float(tfrom[0])), int(float(tfrom[1])), 00)
-                self.Qtime_from.setTime(some_time)
-
-                timeto = record[14]
-                tto = timeto.split(":")
-                some_time = QtCore.QTime(int(float(tto[0])), int(float(tto[1])), 00)
-                self.Qtime_to.setTime(some_time)
             else:
                 QtWidgets.QMessageBox.warning(self, "", "لم يتم العثور علي هذا الباركود")
         except:

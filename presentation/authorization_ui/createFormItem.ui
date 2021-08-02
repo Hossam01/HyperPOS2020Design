@@ -34,6 +34,14 @@
      <height>17</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>Status</string>
    </property>
@@ -49,6 +57,14 @@
      <width>81</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -66,6 +82,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QComboBox" name="CMB_formItemStatus">
    <property name="geometry">
@@ -75,6 +99,14 @@
      <width>86</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -86,6 +118,14 @@
      <height>17</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>Form</string>
    </property>
@@ -93,15 +133,18 @@
   <widget class="QPushButton" name="BTN_createFormItem">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>170</x>
      <y>170</y>
-     <width>141</width>
+     <width>191</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>29LT Bukra Regular</family>
      <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -117,6 +160,14 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
@@ -126,6 +177,14 @@
      <width>99</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Description &lt;span style=&quot; color:#ef2929;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

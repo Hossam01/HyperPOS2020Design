@@ -34,6 +34,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>From User</string>
    </property>
@@ -47,6 +55,14 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
   </widget>
   <widget class="QComboBox" name="CMB_userName1">
    <property name="geometry">
@@ -56,6 +72,14 @@
      <width>86</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
   </widget>
   <widget class="QLabel" name="label_9">
@@ -67,6 +91,14 @@
      <height>29</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>To User</string>
    </property>
@@ -74,15 +106,18 @@
   <widget class="QPushButton" name="BTN_copyUser">
    <property name="geometry">
     <rect>
-     <x>208</x>
+     <x>178</x>
      <y>150</y>
-     <width>161</width>
+     <width>191</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>29LT Bukra Regular</family>
      <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
     </font>
    </property>
    <property name="text">
@@ -100,6 +135,14 @@
      <width>151</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -119,6 +162,14 @@
      <width>151</width>
      <height>17</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>29LT Bukra Regular</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>

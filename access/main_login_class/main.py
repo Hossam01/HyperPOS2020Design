@@ -160,6 +160,7 @@ class CL_main(QtWidgets.QMainWindow):
             self.window_Modify_installment = 0
             self.window_CREATE_installment = 0
             self.window_Modify_Bank = 0
+            self.window_CREATE_Bank = 0
             self.window_Parameters = 0
             self.window_Customer_Service = 0
             self.window_LOAD_CHANGE_STATUS_INACTIVE = 0
@@ -210,7 +211,7 @@ class CL_main(QtWidgets.QMainWindow):
             self.ui.tabWidget.currentChanged.connect(self.onChange)
             self.ui.tabWidget.tabCloseRequested.connect(self.onTabCloseRequested)
             self.ui.actionMain_Menu.triggered.connect(self.ShowHideMenu)
-            self.ui.MainMenu.clicked.connect(self.ShowHideMenu)
+            # self.ui.MainMenu.clicked.connect(self.ShowHideMenu)
             #self.ui.tabWidget.blockSignals(False)
             self.setWindowTitle('HyperPOS Main Page')
 
@@ -274,7 +275,7 @@ class CL_main(QtWidgets.QMainWindow):
 
     def FN_CREATE_LOYPROG(self):
         if self.window_CREATE_LOYPROG == 0:
-            self.window_CREATE_LOYPROG = CL_loyProg()
+            self.window_CREATE_LOYPROG = CL_loyProg('aaaaa')
             self.window_CREATE_LOYPROG.FN_LOAD_DISPLAY()
             self.ui.tabWidget.addTab(self.window_CREATE_LOYPROG, 'انشاء برنامج عضوية')
             self.ui.tabWidget.setFixedWidth(self.window_CREATE_LOYPROG.frameGeometry().width())
@@ -288,7 +289,7 @@ class CL_main(QtWidgets.QMainWindow):
 
 
     def  FN_DISPLAY_CUST(self):
-        self.onTabCloseRequested_DISPLAY_CUST()
+        # self.onTabCloseRequested_DISPLAY_CUST()
         if self.window_DISPLAY_CUST == 0:
             self.window_DISPLAY_CUST = CL_customer()
             self.window_DISPLAY_CUST.FN_LOAD_DISPLAY()
@@ -320,7 +321,7 @@ class CL_main(QtWidgets.QMainWindow):
 
     def FN_DISPLAY_CUSTGP(self):
         if self.window_DISPLAY_CUSTGP == 0:
-            self.window_DISPLAY_CUSTGP = CL_customerGP()
+            self.window_DISPLAY_CUSTGP = CL_customerGP('aaaaa')
             self.window_DISPLAY_CUSTGP.FN_LOAD_DISPlAY()
             self.ui.tabWidget.addTab(self.window_DISPLAY_CUSTGP, 'مجموعة عملاء')
             self.ui.tabWidget.setFixedWidth(self.window_DISPLAY_CUSTGP.frameGeometry().width())
@@ -388,7 +389,7 @@ class CL_main(QtWidgets.QMainWindow):
         try:
             if self.window_DISPLAY_REDITEMGIFT == 0:
                 self.window_DISPLAY_REDITEMGIFT = CL_redGift()
-                self.window_DISPLAY_REDITEMGIFT.FN_LOFN_LOAD_DISPlAYADUI()
+                self.window_DISPLAY_REDITEMGIFT.FN_LOAD_DISPlAY()
                 self.ui.tabWidget.addTab(self.window_DISPLAY_REDITEMGIFT, 'استبدال النقاط بالهدايا')
                 self.ui.tabWidget.setFixedWidth(self.window_DISPLAY_REDITEMGIFT.frameGeometry().width())
                 self.ui.tabWidget.setFixedHeight(self.window_DISPLAY_REDITEMGIFT.frameGeometry().height())
@@ -935,12 +936,23 @@ class CL_main(QtWidgets.QMainWindow):
 
     #Installment
     def FN_CREATE_Bank(self):
-        self.window_two = CL_CreateBank()
-        self.window_two.FN_LOAD_CREATE()
+        # self.window_two = CL_CreateBank()
+        # self.window_two.FN_LOAD_CREATE()
+        if self.window_CREATE_Bank == 0:
+            self.window_CREATE_Bank = CL_CreateBank()
+            self.window_CREATE_Bank.FN_LOAD_CREATE()
+            self.ui.tabWidget.addTab(self.window_CREATE_Bank, 'تعديل بنك')
+            self.ui.tabWidget.setFixedWidth(self.window_CREATE_Bank.frameGeometry().width())
+            self.ui.tabWidget.setFixedHeight(self.window_CREATE_Bank.frameGeometry().height())
+            self.ui.tabWidget.setCurrentWidget(self.window_CREATE_Bank)
+        else:
+            self.ui.tabWidget.setFixedWidth(self.window_CREATE_Bank.frameGeometry().width())
+            self.ui.tabWidget.setFixedHeight(self.window_CREATE_Bank.frameGeometry().height())
+            self.ui.tabWidget.setCurrentWidget(self.window_CREATE_Bank)
 #        self.window_two.MdiParent = self.ParentForm
-       # self.window_two.show()
-        self.window_two.setModal(self, True)
-        self.window_two.exec()
+        # self.window_two.show()
+        # self.window_two.setModal(self, True)
+        # self.window_two.exec()
 
     def FN_Modify_Bank(self):
         if self.window_Modify_Bank == 0:
@@ -1025,6 +1037,9 @@ class CL_main(QtWidgets.QMainWindow):
         elif self.ui.tabWidget.currentWidget() == self.window_Modify_Bank:
             self.ui.tabWidget.setFixedWidth(self.window_Modify_Bank.frameGeometry().width())
             self.ui.tabWidget.setFixedHeight(self.window_Modify_Bank.frameGeometry().height())
+        elif self.ui.tabWidget.currentWidget() == self.window_CREATE_Bank:
+            self.ui.tabWidget.setFixedWidth(self.window_CREATE_Bank.frameGeometry().width())
+            self.ui.tabWidget.setFixedHeight(self.window_CREATE_Bank.frameGeometry().height())
         elif self.ui.tabWidget.currentWidget() == self.window_Parameters:
             self.ui.tabWidget.setFixedWidth(self.window_Parameters.frameGeometry().width())
             self.ui.tabWidget.setFixedHeight(self.window_Parameters.frameGeometry().height())
@@ -1169,6 +1184,8 @@ class CL_main(QtWidgets.QMainWindow):
             self.window_CREATE_installment = 0
         if self.window_Modify_Bank not in li:
             self.window_Modify_Bank = 0
+        if self.window_CREATE_Bank not in li:
+            self.window_CREATE_Bank = 0
         if self.window_Parameters not in li:
             self.window_Parameters = 0
         if self.window_Customer_Service not in li:

@@ -348,8 +348,22 @@ class CL_customer_create(QtWidgets.QDialog):
 
             self.BTN_createCustomer.clicked.connect(self.FN_CREATE_CUST)
             #
-            self.setFixedWidth(1015)
-            self.setFixedHeight(540)
+            # self.setFixedWidth(1015)
+            # self.setFixedHeight(540)
+
+            # Set Style
+            # self.voucher_num.setStyleSheet(label_num)
+            # self.label_2.setStyleSheet(desc_5)
+            css_path = Path(__file__).parent.parent.parent
+            path = css_path.__str__() + '/presentation/Themes/Style.css'
+            self.setStyleSheet(open(path).read())
+
+            # Set Style
+            # self.voucher_num.setStyleSheet(label_num)
+            # self.label_2.setStyleSheet(desc_5)
+            css_path = Path(__file__).parent.parent.parent
+            path = css_path.__str__() + '/presentation/Themes/Style.css'
+            self.setStyleSheet(open(path).read())
         except Exception as err:
             print(err)
 
@@ -590,8 +604,15 @@ class CL_customer(QtWidgets.QDialog):
         self.chk_search_status.stateChanged.connect(self.onClickedCheckBox)
 
         self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint | QtCore.Qt.WindowMinimizeButtonHint)
-        self.setFixedWidth(1028)
-        self.setFixedHeight(560)
+        # self.setFixedWidth(1028)
+        # self.setFixedHeight(560)
+
+        # Set Style
+        # self.voucher_num.setStyleSheet(label_num)
+        # self.label_2.setStyleSheet(desc_5)
+        css_path = Path(__file__).parent.parent.parent
+        path = css_path.__str__() + '/presentation/Themes/Style.css'
+        self.setStyleSheet(open(path).read())
         #check authorization
         for row_number, row_data in enumerate( CL_userModule.myList ):
            if  row_data[1] =='Display_Customer':
@@ -643,8 +664,15 @@ class CL_customer(QtWidgets.QDialog):
         self.fileName = ''
         self.FN_GET_BRANCHES()
         self.FN_GET_REDEEMTPS()
-        self.setFixedWidth(576)
-        self.setFixedHeight(178)
+        # self.setFixedWidth(576)
+        # self.setFixedHeight(178)
+
+        # Set Style
+        # self.voucher_num.setStyleSheet(label_num)
+        # self.label_2.setStyleSheet(desc_5)
+        css_path = Path(__file__).parent.parent.parent
+        path = css_path.__str__() + '/presentation/Themes/Style.css'
+        self.setStyleSheet(open(path).read())
     def FN_GET_BRANCHES(self):
         conn = db1.connect()
         mycursor = conn.cursor()

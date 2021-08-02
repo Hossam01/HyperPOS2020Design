@@ -6,9 +6,8 @@ from PyQt5.QtWidgets import QMessageBox
 from PyQt5.uic import loadUi
 from data_connection.h1pos import db1
 from PyQt5.QtCore import QDate
-from presentation.Themes.Special_StyleSheet import label_num, desc_5
 
-
+from presentation.Themes.Special_StyleSheet import desc_5
 
 
 class CL_modifyCoupon(QtWidgets.QDialog):
@@ -25,14 +24,6 @@ class CL_modifyCoupon(QtWidgets.QDialog):
         try:
             filename = self.dirname + '/stoppedCoupon.ui'
             loadUi(filename, self)
-
-            # Set Style
-            self.labe_id.setStyleSheet(label_num)
-            self.label.setStyleSheet(desc_5)
-            css_path = Path(__file__).parent.parent.parent
-            path = css_path.__str__() + '/presentation/Themes/Style.css'
-            self.setStyleSheet(open(path).read())
-
             self.CMB_CouponStatus.addItems(["Inactive", "Active"])
             self.CMB_CouponDes.activated[str].connect(self.FN_getStatus)
             self.FN_getData()
@@ -41,7 +32,12 @@ class CL_modifyCoupon(QtWidgets.QDialog):
             self.BTN_modifyCoupon.clicked.connect(self.FN_UpdateStatus)
             self.setWindowFlags(QtCore.Qt.WindowCloseButtonHint | QtCore.Qt.WindowMinimizeButtonHint)
 
-
+            # Set Style
+            # self.label.setStyleSheet(label_num)
+            self.label.setStyleSheet(desc_5)
+            css_path = Path(__file__).parent.parent.parent
+            path = css_path.__str__() + '/presentation/Themes/Style.css'
+            self.setStyleSheet(open(path).read())
         except:
             print(sys.exc_info())
 
@@ -85,23 +81,11 @@ class CL_modifyCoupon(QtWidgets.QDialog):
             xto = dateto.split("-")
             d = QDate(int(xto[0]), int(xto[1]), int(xto[2]))
             self.Qdate_to.setDate(d)
-
             datefrom = record[11]
             xfrom = datefrom.split("-")
             d = QDate(int(xfrom[0]), int(xfrom[1]), int(xfrom[2]))
             self.Qdate_from.setDate(d)
             self.LE_desc_4.setValue(float(record[4]))
-
-            timefrom = record[12]
-            tfrom = timefrom.split(":")
-            some_time = QtCore.QTime(int(float(tfrom[0])), int(float(tfrom[1])), 00)
-            self.Qtime_from.setTime(some_time)
-
-            timeto = record[14]
-            tto = timeto.split(":")
-            some_time = QtCore.QTime(int(float(tto[0])), int(float(tto[1])), 00)
-            self.Qtime_to.setTime(some_time)
-
             print(record[5])
             if (int(record[5]) == 0):
                 self.checkBox_Multi.setChecked(True)

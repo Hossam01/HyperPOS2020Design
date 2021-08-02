@@ -7,7 +7,6 @@ from access.authorization_class.user_module import CL_userModule
 from data_connection.h1pos import db1
 from datetime import datetime
 from PyQt5.QtWidgets import QTableWidgetItem, QComboBox
-from presentation.Themes.Special_StyleSheet import label_num, desc_5
 
 
 class CL_Parameters(QtWidgets.QDialog):
@@ -16,21 +15,23 @@ class CL_Parameters(QtWidgets.QDialog):
         cwd = Path.cwd()
         mod_path = Path(__file__).parent.parent.parent
         self.dirname = mod_path.__str__() + '/presentation/configuration_ui'
-
         self.conn = db1.connect()
 
     def FN_LOAD_CREATE(self):
         filename = self.dirname + '/Create_Parameter.ui'
         loadUi(filename, self)
         self.setWindowTitle('Parameters')
-        css_path = Path(__file__).parent.parent.parent
-
-        path = css_path.__str__() + '/presentation/Themes/Style.css'
-        self.setStyleSheet(open(path).read())
         self.BTN_createParameter.clicked.connect(self.FN_CREATE_Parameters)
         self.BTN_ModifyParameter.clicked.connect(self.FN_Update_Parameters)
         self.CMB_Status.addItems(["Active", "Inactive"])
         self.FN_DISPLAY_PRIVILAGE()
+
+        # Set Style
+        # self.voucher_num.setStyleSheet(label_num)
+        # self.label_2.setStyleSheet(desc_5)
+        css_path = Path(__file__).parent.parent.parent
+        path = css_path.__str__() + '/presentation/Themes/Style.css'
+        self.setStyleSheet(open(path).read())
 
     def FN_CREATE_Parameters(self):
         sql_select_Query = "SELECT * FROM Hyper1_Retail.SYS_CONFIG_PARAMETERS where PARAMETER_DESC = '"+self.LE_name.text()+"' and STATUS = 1"
